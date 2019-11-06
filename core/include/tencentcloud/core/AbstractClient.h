@@ -39,6 +39,7 @@ namespace TencentCloud
         Credential GetCredential() const;
         void SetNetworkProxy(const NetworkProxy &proxy);
 
+	void SetHttpClient(HttpClient *httpClient){this->m_httpClient = httpClient; }
     protected:
         HttpClient::HttpResponseOutcome MakeRequest(const AbstractModel& request, const std::string &actionName);
         void GenerateSignature(HttpRequest &request);

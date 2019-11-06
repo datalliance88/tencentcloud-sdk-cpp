@@ -31,12 +31,12 @@ namespace TencentCloud
         typedef Outcome<Error, HttpResponse> HttpResponseOutcome;
 
         HttpClient();
-        ~HttpClient();
+        virtual ~HttpClient();
 
         void SetReqTimeout(int64_t timeoutOfMs);
         void SetConnectTimeout(int64_t timeoutOfMs);
 
-        HttpResponseOutcome SendRequest(const HttpRequest &request);
+        virtual HttpResponseOutcome SendRequest(const HttpRequest &request);
 
         void SetProxy(const NetworkProxy &proxy);
 
