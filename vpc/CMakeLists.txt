@@ -823,7 +823,7 @@ set_target_properties(vpc
 
 target_include_directories(vpc
   PRIVATE include
-    ${CMAKE_SOURCE_DIR}/core/include
+    ${PROJECT_SOURCE_DIR}/core/include
   )
 target_link_libraries(vpc
   core)

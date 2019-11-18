@@ -375,7 +375,7 @@ set_target_properties(cvm
 
 target_include_directories(cvm
   PRIVATE include
-    ${CMAKE_SOURCE_DIR}/core/include
+    ${PROJECT_SOURCE_DIR}/core/include
   )
 target_link_libraries(cvm
   core)
